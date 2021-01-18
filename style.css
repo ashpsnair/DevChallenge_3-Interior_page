@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    background-color:#131010;
+    color: white;
+        
+}
+
+
+button{
+    position:absolute;
+    padding:8px;
+    left: 77px;
+    top: 42px;
+    border:1px solid white;
+    background-color: black;
+    color: white;
+}
+
+ul{
+    font-size: 18px;
+    font-family: Montserrat;
+    margin-top: 45px;;
+    margin-left: 50%;
+    text-align:center;
+}
+li{
+    position: relative;
+    display:inline;
+    margin:6%;
+    
+}
+
+.box1{
+    position:absolute;
+    top:145px;
+    left:77px;
+    width: 450px;
+    font-family: 'Montserrat', sans-serif;
+      
+}
+
+.box1 h2{
+    font-size:45px;
+    font-family: 'Lora', serif;
+    letter-spacing:0.1em;
+    margin-bottom:40px;
+}
+.box1 p{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom:40px;
+}
+
+.box2 >div:nth-child(2){
+    width:400px;
+    height:200px;
+    background-color:#131010;
+}
+
+.box2 >div:nth-child(1) img{
+    position:absolute;
+    height: 580px;
+    width: 750px;
+    left: 600px;
+    top: 200px;
+    border-radius: 0px; }
+
+.box2>div:nth-child(2)>div img{
+        position:relative;
+        border-radius: 50%;
+        height: 85px;
+        width: 75px;
+        left: 30px;
+        top: 20px; }
+
+.box2>div:nth-child(2)> div{
+            display:flex;
+        }
+
+.box2>div:nth-child(2)> div>div{
+           position: relative;
+           left:40px;
+           top:10px;
+
+        }
+.box2>div:nth-child(2)> div>div>p{
+    margin-top:-30px;
+    font-size: 20px;
+}
+.box2>div:nth-child(2)> div>div>h5{
+    margin-top:15px;
+    font-size: 20px;
+}
+
+.box2>div:nth-child(2) {
+    position:absolute;
+    left:900px;
+    top:700px;
+}
+.box2>div:nth-child(2)>p{
+    position:relative;
+    left: 40px;
+    top:10px;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    width: 300px;
+    font-weight: 800;
+}
+
+footer{
+    color:white;
+    font-family: 'Lora', serif;
+    font-size:20px;
+    position:absolute;
+    top: 95%;
+    left:45%;
+}
