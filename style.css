@@ -162,14 +162,15 @@ body{
 .box2>div{
        width:90%;
        position: absolute;
-       top: 760px;
-       left:25%;  
+       top: 80%;
+       left:30%;  
 
     }
 footer{
     position: absolute;
     width: 100%;
     left: 90px;
+    top: 120%;
 }
 
 }
