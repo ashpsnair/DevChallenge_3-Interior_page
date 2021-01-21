@@ -7,16 +7,17 @@
     <title>Interior consultant challenge</title>
 </head>
 <body>
-<div class="body">
-    <div> <button> THIS INTERIOR </button></div>
-    <ul>
+    
+    <button type="button" id="ham" onclick="click()"> &#9776</button>
+     
+    <ul id="menu">
         <li>Home</li>
         <li>Collection</li>
         <li>About</li>
         <li>Contact</li>
     </ul>
-    <label for= "toggle">&#9776</label>
-    <input type="checkbox" id="toggle">
+    <div id="main">   
+        <div id="interior"> <button> THIS INTERIOR </button></div>
 
     <div class="box1">
         <h2> Modern Interior</h2>
@@ -34,7 +35,7 @@
                 <img src="/photo2.png">
                 <div>
                     <h5>Aiswarya P.S</h5>
-                    <p>UI/US Ethusiast</p>
+                    <p>UI/UX Ethusiast</p>
                 </div> 
             </div>
            
@@ -45,6 +46,27 @@
 
 <footer>Aiswarya P.S Nair @DevChallenges.io</footer>
 </div>
+
+<script>
+    object= document.getElementById('ham');
+    object.onclick= function(){click()} ;
+    function click(){
+        if (document.getElementById('main').style.display ==='none'){
+            document.getElementById('main').style.display ='contents';  
+            document.getElementById('menu').style.display="none"; 
+            document.getElementById('ham').innerHTML="&#9776";
+        } else {
+              document.getElementById('main').style.display ='none';
+              var menu= document.getElementById('menu').style;
+              menu.display ='block';
+              menu.lineHeight="70px";
+              menu.marginTop="200px";
+              menu.fontSize="25px"; menu.alignSelf="center";
+              document.getElementById('ham').innerHTML="&#x2716";
+            }       
+        };
+</script>
+
 </body>
 
 </html>
