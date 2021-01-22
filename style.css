@@ -100,7 +100,9 @@ li{
     
 .box2>div>div>div p{
         position: relative;
-        top:-25px;}
+        top:-25px;
+        color: #828282;
+}
 
 .box2>div> p{
     width:350px;
