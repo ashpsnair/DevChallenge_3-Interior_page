@@ -16,9 +16,10 @@
         <li>About</li>
         <li>Contact</li>
     </ul>
-    <div id="main">   
-        <div id="interior"> <button> THIS INTERIOR </button></div>
+    <div id="interior"> <button> THIS INTERIOR </button></div>
 
+    <div id="main">   
+    
     <div class="box1">
         <h2> Modern Interior</h2>
         <p>A full-Service residential & commercial interior design and 
@@ -31,17 +32,20 @@
             <img src="photo1.png">
         
         <div>
-            <div style="display:flex;">
-                <img src="/photo2.png">
-                <div>
-                    <h5> Aliza Webber</h5>
-                    <p>Interior designer</p>
-                </div> 
+            <div style="display: flex;">
+                <img src="/photo2.png" id="img2" >
+                    <div class="namebox" style="display: block;">
+                        <div> Aliza Webber</div>
+                        <div>Interior designer</div>
+                    </div>               
             </div>
-           
             <p>Designed in 2020 by Aliza Webber</p>
-         
+                
         </div>
+           
+          
+         
+    </div>
     </div>
 
 <footer>Aiswarya P.S Nair @DevChallenges.io</footer>
@@ -61,7 +65,8 @@
               menu.display ='block';
               menu.lineHeight="70px";
               menu.marginTop="250px";
-              menu.fontSize="30px"; menu.alignSelf="center";
+              menu.marginRight="500px";
+              menu.fontSize="25px"; menu.alignSelf="center";
               document.getElementById('ham').innerHTML="&#x2716";
             }       
         };
