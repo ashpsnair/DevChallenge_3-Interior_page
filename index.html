@@ -7,9 +7,9 @@
     <title>Interior consultant challenge</title>
 </head>
 <body>
-    
-    <button type="button" id="ham" onclick="click()"> &#9776</button>
-     
+  
+    <button id="ham"> &#9776 </button>
+   
     <ul id="menu">
         <li>Home</li>
         <li>Collection</li>
@@ -56,20 +56,47 @@
     object.onclick= function(){click()} ;
     function click(){
         if (document.getElementById('main').style.display ==='none'){
+
             document.getElementById('main').style.display ='contents';  
             document.getElementById('menu').style.display="none"; 
             document.getElementById('ham').innerHTML="&#9776";
         } else {
-              document.getElementById('main').style.display ='none';
-              var menu= document.getElementById('menu').style;
-              menu.display ='block';
-              menu.lineHeight="70px";
-              menu.marginTop="250px";
-              menu.marginRight="500px";
-              menu.fontSize="25px"; menu.alignSelf="center";
+            main.style.display = "none";
+            logo.style.visibility = "hidden";
               document.getElementById('ham').innerHTML="&#x2716";
             }       
         };
+</script>
+
+
+
+
+
+<script>
+
+let show = "true";
+
+const disable=()=>{
+     
+    if (show ==="true"){
+      
+        console.log("yo yo working here");
+        main.style.display = "none";
+        logo.style.visibility = "hidden";
+        footer.style.display = "none";
+        label.innerHTML="&#10006;"
+        show = "false";
+
+    }else{
+        console.log("yo yo nah"); 
+        main.style.display = "flex";
+        logo.style.visibility = "visible";
+        footer.style.display = "block";
+        label.innerHTML="&#9776;"
+        show = "true" ;
+    }
+   
+}
 </script>
 
 </body>
