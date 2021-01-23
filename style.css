@@ -14,10 +14,7 @@ body{
     display:none;
 }
 button{
-    position:absolute;
     padding:8px;
-    left: 77px;
-    top: 42px;
     border:1px solid white;
     background-color: #181719;
     color: white;
