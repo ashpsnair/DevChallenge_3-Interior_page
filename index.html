@@ -7,18 +7,17 @@
     <title>Interior consultant challenge</title>
 </head>
 <body>
-    <nav style="display: flex;">
-        <div style="width:100%">
-            <button id="interior"> THIS INTERIOR </button> 
-            <button id="ham"> &#9776 </button>
-        </div>
+    <nav>
+        <button id="interior"> THIS INTERIOR </button> 
+        <button id="ham" onclick="disable()"> &#9776 </button>
+        
        <ul id="menu">
             <li>Home</li>
             <li>Collection</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
-         </nav>
+    </nav>
     
 
     <div id="main">   
@@ -34,7 +33,7 @@
        
             <img src="photo1.png">
         
-        <div>
+        <div class="namecard">
             <div style="display: flex;">
                 <img src="/photo2.png" id="img2" >
                     <div class="namebox" style="display: block;">
@@ -47,60 +46,47 @@
         </div>
            
           
-        <footer>Aiswarya P.S Nair @DevChallenges.io</footer>
-   
+        
     </div>
 
-    </div>
-
-</div>
-
-<script>
-    object= document.getElementById('ham');
-    object.onclick= function(){click()} ;
-    function click(){
-        if (document.getElementById('main').style.display ==='none'){
-
-            document.getElementById('main').style.display ='contents';  
-            document.getElementById('menu').style.display="none"; 
-            document.getElementById('ham').innerHTML="&#9776";
-        } else {
-            main.style.display = "none";
-            document.getElementById('ham').innerHTML="&#x2716";
-            }       
-        };
-</script>
+     </div>
+     <!-- <footer>Aiswarya P.S Nair @DevChallenges.io</footer> -->
 
 
-
-
-
-<script>
-
-let show = "true";
-
-const disable=()=>{
      
-    if (show ==="true"){
-      
-        console.log("yo yo working here");
-        main.style.display = "none";
-        logo.style.visibility = "hidden";
-        footer.style.display = "none";
-        label.innerHTML="&#10006;"
-        show = "false";
+<script>
 
-    }else{
-        console.log("yo yo nah"); 
-        main.style.display = "flex";
-        logo.style.visibility = "visible";
-        footer.style.display = "block";
-        label.innerHTML="&#9776;"
-        show = "true" ;
+    let show = "true";
+    var menu= document.querySelector("#menu")
+    var int= document.querySelector("#interior")
+    const disable=()=>{
+         
+        if (show ==="true"){
+            menu.style.display="none";
+            console.log("yo yo working here");
+            main.style.display = "none";
+            int.style.visibility = "hidden";
+            ham.innerHTML="&#10006;";
+            menu.style.display= "block";
+            show = "false";
+    
+        }else{
+            console.log("yo yo nah"); 
+            menu.style.display="none";
+            main.style.display = "block";
+            ham.style.visibility = "visible";
+             ham.innerHTML="&#9776;"
+             int.style.visibility = "visible";
+            show = "true" ;
+        }
+       
     }
+    </script>
+    </body>
    
-}
-</script>
+
+
+
 
 </body>
 
