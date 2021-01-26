@@ -50,7 +50,7 @@
     </div>
 
      </div>
-     <footer>Aiswarya P.S Nair @DevChallenges.io</footer>
+     <footer id="footer">Aiswarya P.S Nair @DevChallenges.io</footer>
 
 
      
@@ -59,15 +59,18 @@
     let show = "true";
     var menu= document.querySelector("#menu")
     var int= document.querySelector("#interior")
+    var foot= document.querySelector("#footer")
     const disable=()=>{
          
         if (show ==="true"){
+            foot.style.visibility="hidden";
             menu.style.display="none";
             console.log("yo yo working here");
             main.style.display = "none";
             int.style.visibility = "hidden";
             ham.innerHTML="&#10006;";
             menu.style.display= "block";
+            
             show = "false";
     
         }else{
@@ -77,6 +80,7 @@
             ham.style.visibility = "visible";
              ham.innerHTML="&#9776;"
              int.style.visibility = "visible";
+             foot.style.visibility="visible";
             show = "true" ;
         }
        
