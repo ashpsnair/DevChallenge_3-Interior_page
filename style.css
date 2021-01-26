@@ -113,7 +113,7 @@ li{
 
 .namebox div:nth-child(2){
     position: absolute;
-    margin-top:10%;
+    margin-top:13%;
     margin-left: 30%;
     font-size: 20px;
     color:grey;
@@ -136,8 +136,8 @@ footer{
     color:white;
     font-family: 'Lora', serif;
     font-size:20px;
-    position: relative;
-    top:100%;
+    margin-top: 30%;
+    
   
 }
 
